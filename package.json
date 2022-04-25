@@ -1,0 +1,17 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Lista de Tarefas baseado no Microsoft To Do",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "js",
+    "node"
+  ],
+  "author": "Glaucio Daniel",
+  "license": "MIT"
+}
