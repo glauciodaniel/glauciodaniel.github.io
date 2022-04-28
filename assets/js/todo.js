@@ -37,10 +37,10 @@ newTask.addEventListener("keyup", (e) => {
   if (e.key == "Enter") {
     alert(newTask.value);
 
-    db.push({ id: db.length, title: newTask.value });
+    db.push({ id: Number(db.length) + 1, title: newTask.value });
     newTask.value = "";
+    console.log(db);
   }
-  console.log(db);
 });
 
 // exemplo de array
