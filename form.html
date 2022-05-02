@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-6">
+                <form method="POST" action="/login" target="_blank">
+
+                    <div class="form-group mb-3">
+                        <label for="txtLogin" class="form-label">Login</label>
+                        <input type="text" id="txtLogin" class="form-control" placeholder="Digite o login" required />
+                        <input type="checkbox" id="esportes" value="esportes" /> Esportes
+                        <input type="checkbox" id="cinema" value="cinema" /> Cinema<br />
+                        <input type="radio" id="opcao1" value="1" name="opcao" /> Sim
+                        <input type="radio" id="opcao2" value="2" name="opcao" checked="checked" /> Não <br />
+                        <input type=" button" class="btn btn-primary" value="Botão" />
+                        <!-- <button></button> -->
+                        <input type="color" class="form-control" />
+                        <input type="date" class="form-control" />
+                        <input type="time" class="form-control" />
+                        <input type="url" id="txtLogin" class="form-control" placeholder="Digite o login" />
+                        <input type="email" class="form-control" placeholder="Digite o email" required
+                            oninvalid="this.setCustomValidity('Vai Corinthians!')" />
+                        <input type="number" min="0" max="100" step="5" class="form-control" />
+                        <select name="carro" class="form-control">
+                            <option value="1">Fiat</option>
+                            <option value="2">Ford</option>
+                            <option value="3" selected="selected">Chevrolet</option>
+                            <option value="4">VW</option>
+                        </select>
+
+
+                        <textarea name="message" class="form-control" rows="10" cols="20"
+                            placeholder="Mensagem"></textarea>
+
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="txtPassword" class="form-label">Senha</label>
+                        <input type="password" id="txtPassword" class="form-control" placeholder="Digite a Senha" />
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" id="btn-send" class="btn btn-primary mb-2"
+                            disabled="disabled">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const opcao = document.querySelectorAll("input[type='radio']");
+        const btnSend = document.querySelector("#btn-send");
+
+        opcao.forEach(item => {
+            item.addEventListener('click', e => {
+                if (Number(item.value) == 1) {
+                    btnSend.removeAttribute("disabled");
+                } else {
+                    btnSend.setAttribute("disabled", "disabled");
+                }
+            });
+        });
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

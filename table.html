@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<!--
+Extra small (xs) < 576px mobile
+Small (sm) >= 576px mobile landscape and tablets
+Medium (md) tablet
+Large (lg) desktop
+Extra large (xl) Full-HD ou 4k >= 1200px 
+Extra extra large (xxl) >= 1400px
+
+mui react
+-->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <table class="table table-striped table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th>Instrument</th>
+                            <th>Last Price</th>
+                            <th>24h Change</th>
+                            <th>24h Volume</th>
+                            <th colspan="2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BTC/USDT</td>
+                            <td>51,024.06 <span>$51,024.06</span></td>
+                            <td>-0.02%</td>
+                            <td>$1,306,733,164.70 <span>25,610 BTC</span></td>
+                        </tr>
+                        <tr>
+                            <td>TH/USDT</td>
+                            <td>4,059.65 <span>$4,059.65</span></td>
+                            <td>-0.83%</td>
+                            <td>$666,084,113.74 <span>164,074 ETH</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col alert alert-success">
+                <div>
+                    Dados cadastrados com sucesso!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
