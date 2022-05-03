@@ -176,13 +176,16 @@ header.menu__header__profile > div {
     margin-top: 2%;
     justify-content: space-between;
 }
+
 .tasks {
     flex-direction: column;
 }
+
+
 .task {
     width: 90%;
-    height: 60px;
-    margin: 2% 5%;
+    height: 40px;
+    margin: 0.5% 5%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;

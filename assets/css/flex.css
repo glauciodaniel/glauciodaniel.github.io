@@ -1,0 +1,128 @@
+@keyframes fadeUp{
+    from {
+        transform: translateX(-1000px) scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px) scale(1);
+        opacity:1;
+    }
+}
+
+
+
+.box {
+    /* transform: translateY(100px); */
+    animation: fadeUp 1s;
+    animation-iteration-count: 1;
+
+    width: 50%;
+    height: 50vh;
+    border: solid 5px red;
+    margin: 10% auto;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end; /*quando row - justify-content é eixo X*//* quando column - justify-content é eixo Y */
+    align-items: center; /* quando row - align items é eixo Y */ /*quando column - align-items é eixo X*/
+}
+html { 
+    font-size: 40px;
+}
+/* 
+unidades de medida CSS - px é sempre uma medida fixa.
+.box - colocamos uma medida fixa nela para o tamanho da fonte.
+em - é uma medida relativa em relação ao tamanho definido no elemento pai. a largura da letra M no tamanho definido no pai.
+rem - é uma medida relativa em relação ao root que é a tag html
+em 40px equivale a 1em para os elementos filhos e descendentes;
+% - é relativo em relação ao elemento pai.
+
+em equivale a largua da letra no tamanho definido no Pai.
+o padrão é 16px;
+*/
+/* @media (min-width:768px){ .box{flex-direction: row;} */
+.item {
+    width: 45px;
+    height: 45px;
+    background: #eee;
+    margin: 1%;
+    font-size: 2rem;
+    font-family: 'Roboto','Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+.box:hover .item {
+    transform: translateX(200px) scale(2) rotate(360deg);
+    border-radius: 50%;
+}
+/*
+ .item:hover {
+    transform: scale(5);
+    border-radius: 50%;    
+} 
+*/
+/* .item.click {
+    transform: rotate(360deg);
+} */
+/* pegue o .item e aplique o .click */
+/* transform - transition - animation */
+
+.a {
+color: red;
+/* align-self: flex-start; */
+}
+.b {
+color: green;
+/* align-self: flex-end; */
+}
+.c {
+color: blue;
+}
+/* display:
+
+div - elemento de bloco
+a - elemento de linha
+
+a { display: inline-block;}
+
+*/
+
+
+.picture {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    border: solid 1px red;
+    overflow: hidden;
+    margin-bottom: 10%;
+    position: relative;
+}
+/* Ao passar o mouse sobre .picture aplique um efeito ao figcaption.  bottom:0; */
+.picture:hover figcaption {
+    bottom: 0;
+    transform: rotate(1440deg);
+}
+.picture:hover img {
+    transform: scale(2);
+}
+.picture > figure > img {
+    width: 100%;
+    transition-duration: 1.5s;
+}
+.picture > figure >figcaption {
+    width: 100%;
+    height: 100px;
+    padding-top: 10%;
+    background: #000000aa;
+    color: #fff;
+    position:absolute;
+    bottom: -100px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+.picture>figure {
+    height: 300px;
+    position: relative;
+}
