@@ -27,7 +27,7 @@
     align-items: center; /* quando row - align items é eixo Y */ /*quando column - align-items é eixo X*/
 }
 html { 
-    font-size: 40px;
+    font-size: 16px;
 }
 /* 
 unidades de medida CSS - px é sempre uma medida fixa.
